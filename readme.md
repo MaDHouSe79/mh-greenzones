@@ -31,6 +31,8 @@
 
 # mh-greenzones
 - Add greenzones on location in your city.
+- Disable collisions and controls and display a greenzone message.
+  
 
 # LICENSE
 [GPL LICENSE](./LICENSE)<br />
