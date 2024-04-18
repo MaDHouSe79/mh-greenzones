@@ -113,7 +113,7 @@ Citizen.CreateThread(function()
                 DisableControls() 
             end
             if Config.DisplayZoneMessage then 
-                DrawTxt(0.94, 1.45, 1.0, 1.0, 0.6, "~g~GREENZONE~w~", 255, 255, 255, 255)
+                DrawTxt(0.94, 1.45, 1.0, 1.0, 0.6, Config.GreezeZoneDisplayName, 255, 255, 255, 255)
             end
         end
         Citizen.Wait(sleep)
