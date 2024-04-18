@@ -6,8 +6,7 @@ Config.DebugPoly = false
 Config.DisablecControls = true
 Config.DisableCollisions = true
 Config.DisplayZoneMessage = true
-
-Config.GreezeZoneDisplayName = "~g~GREENZONE~w~"
+Config.GreezeZoneDisplayName = "~g~GREENZONE~w~" -- display message on screen
 Config.Greenzones = {
     {
         id = 1,
