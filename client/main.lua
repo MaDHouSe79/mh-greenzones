@@ -119,3 +119,21 @@ Citizen.CreateThread(function()
         Citizen.Wait(sleep)
     end
 end)
+
+Citizen.CreateThread(function()
+    while true do
+        local sleep = 10000
+        if isInGreenZone then
+            if Config.AutoAttHunderAndThirst then
+                if GetResourceState("es_extended") ~= 'missing' then
+                    TriggerEvent('esx_status:add', "hunger", 100.0)
+                    TriggerEvent('esx_status:add', "thirst", 100.0)
+                elseif GetResourceState("qb-core") ~= 'missing' then
+                    TriggerServerEvent('consumables:server:addHunger', 100)
+                    TriggerServerEvent('consumables:server:addThirst', 100)
+                end
+            end
+        end
+        Citizen.Wait(sleep)
+    end
+end)
