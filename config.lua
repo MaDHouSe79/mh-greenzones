@@ -7,6 +7,9 @@ Config.DisablecControls = true
 Config.DisableCollisions = true
 Config.DisplayZoneMessage = true
 Config.GreezeZoneDisplayName = "~g~GREENZONE~w~" -- display message on screen
+
+Config.AutoAddHunderAndThirst = false -- only for qv and esx
+
 Config.Greenzones = {
     {
         id = 1,
