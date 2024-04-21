@@ -124,7 +124,7 @@ Citizen.CreateThread(function()
     while true do
         local sleep = 10000
         if isInGreenZone then
-            if Config.AutoAddHunderAndThirst  then
+            if Config.AutoAddHunderAndThirst then
                 if GetResourceState("es_extended") ~= 'missing' then
                     TriggerEvent('esx_status:add', "hunger", 100.0)
                     TriggerEvent('esx_status:add', "thirst", 100.0)
