@@ -13,17 +13,17 @@ end
 
 local function CreateGreenZones()
     for k, v in pairs(Config.Greenzones) do
-        zones["zone_" .. v.id] = {}
+        zones["zones_" .. v.id] = {}
         zones[#zones + 1] = PolyZone:Create({table.unpack(v.zone.vectors)}, {
             name = v.zone.name, 
             minZ = v.zone.minZ, 
             maxZ = v.zone.maxZ,
         })
-        zones["zone_" .. v.id].zonecombo = ComboZone:Create(zones, { 
+        zones["zones_" .. v.id].zonecombo = ComboZone:Create(zones, { 
             name = "ZonesCombo", 
             debugPoly = Config.DebugPoly 
         })
-        zones["zone_" .. v.id].zonecombo:onPlayerInOut(function(isPointInside)
+        zones["zones_" .. v.id].zonecombo:onPlayerInOut(function(isPointInside)
             if isPointInside then
                 isInGreenZone = true
             else
