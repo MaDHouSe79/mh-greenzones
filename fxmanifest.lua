@@ -6,7 +6,7 @@ game 'gta5'
 
 author 'MaDHouSe'
 description 'MH Greenzone - anti vdm.'
-version '1.0'
+version '1.0.0'
 lua54 'yes'
 
 shared_scripts {
